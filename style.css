@@ -19,7 +19,7 @@ header {
     flex-direction: column;
     gap: 50px;
     width: 1300px;
-    box-shadow: 5px 5px 5px rgba(166, 166, 166, 0.4);
+    box-shadow: 5px 5px 10px rgba(166, 166, 166, 0.4);
     padding: 50px;
 }
 
@@ -35,7 +35,7 @@ header {
     color: rgb(73, 73, 73);
 }
 
-.icons {
+.title-container>.icons {
     align-self: flex-end;
     display: flex;
     gap: 20px;
@@ -50,7 +50,10 @@ header {
     width: 1000px;
     height: 1000px;
     background-image: url(https://images.pexels.com/photos/927451/pexels-photo-927451.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 main {
@@ -58,31 +61,40 @@ main {
 }
 
 .body-title {
-    font-size: 60px;
+    font-size: 100px;
     font-weight: 300;
+    padding-bottom: 10px;
 }
 
 .projects-container {
     display: grid;
-    grid-template-columns: repeat(3, 30%);
+    grid-template-columns: repeat(3, 30.7%);
     grid-template-rows: repeat(2, 50%);
-    gap: 5%;
+    gap: 80px;
 }
 
 .project-card {
     display: flex;
     flex-direction: column;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
 }
 
 .content {
     padding-top: 10px;
     padding-left: 20px;
     padding-right: 20px;
+    height: 100px;
 }
 
 .title-container {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+.description {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(43, 43, 43);
 }
 
 .project-title {
@@ -93,4 +105,60 @@ main {
 .title-container>.icons {
     display: flex;
     height: 30px;
+}
+
+.temp {
+    height: 400px;
+    background-color: rgb(160, 51, 51);
+    color: white;
+    font-size: 60px;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    background-color: #0891B2;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.contact {
+    font-size: 100px;
+    font-weight: 300;
+    padding-bottom: 10px;
+}
+
+.footer-content p {
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.phone-container {
+    padding-bottom: 20px;
+}
+
+.phone-container, .email-container {
+    display: flex;
+    height: 50px;
+    gap: 20px;
+    fill: white;
+}
+
+.footer-content>.icons {
+    display: flex;
+    height: 80px;
+    width: 50%;
 }
